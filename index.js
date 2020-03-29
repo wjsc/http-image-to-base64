@@ -9,7 +9,7 @@ app.post('/image', (req, res) => {
     return res.status(400).send('');
   }
   //res.status(200).send(req.files.data.data.toString('base64'));
-  res.status(200).json({ base64: req.files.data.data.toString('base64') })
+  res.status(200).json({ base64: req.files.data.data.toString('base64') });
 });
 
 app.listen(process.env.PORT || 3000, () => {
